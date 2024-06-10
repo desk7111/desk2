@@ -19,7 +19,42 @@ namespace desk2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string test1 = maskedTextBox1.Text;
+            string test2 = maskedTextBox2.Text;
+            MessageBox.Show((int.Parse(test1) + int.Parse(test2)).ToString());
+            //string number1 = "123";
+            //string number2 = "123";
+            //MessageBox.Show((int.Parse(number1) + int.Parse(number2)).ToString());
+            //string test1 = "456";
+            //int test3 = 123;
+            //int result;
+            //bool success= int.TryParse(test1, out result);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string test1 = maskedTextBox1.Text;
+            string test2 = maskedTextBox2.Text;
+            MessageBox.Show((int.Parse(test1) - int.Parse(test2)).ToString());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string test1 = maskedTextBox1.Text;
+            string test2 = maskedTextBox2.Text;
+            MessageBox.Show((int.Parse(test1) * int.Parse(test2)).ToString());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string test1 = maskedTextBox1.Text;
+            string test2 = maskedTextBox2.Text;
+            MessageBox.Show((int.Parse(test1) / int.Parse(test2)).ToString());
         }
     }
 }
